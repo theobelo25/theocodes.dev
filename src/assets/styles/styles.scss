@@ -1,0 +1,15 @@
+/// Projects
+///
+/// Compile all scss
+
+// Components
+@import "./components/components.scss";
+
+// Pages
+@import "./pages/pages.scss";
+
+// Templates
+@import "./templates/templates.scss";
+
+// Shared / Util
+@import "./shared/shared.scss";

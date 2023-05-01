@@ -1,0 +1,26 @@
+.project-tags {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  width: 85%;
+  margin-bottom: 2rem;
+  margin-left: 0;
+  padding-left: 0;
+  list-style: none;
+
+  @media (max-width: 50rem) {
+    width: 100%;
+  }
+
+  li {
+    margin-bottom: 0;
+    padding: 0.25rem 1rem;
+    background: var(--background-light);
+    border-radius: 5px;
+    color: var(--heading-color);
+    text-transform: uppercase;
+    font-family: var(--subhead-font);
+    font-size: 0.75rem;
+  }
+}

@@ -1,0 +1,33 @@
+.work-experience-item {
+  top: 0;
+  left: 0;
+  padding: var(--card-padding);
+
+  &:not(:first-of-type) {
+    position: absolute;
+  }
+
+  h3 {
+    margin: 0;
+    color: var(--background-light);
+  }
+
+  h4 {
+    margin: 0;
+  }
+
+  h4,
+  p,
+  li {
+    color: white;
+  }
+
+  .job-details {
+    display: flex;
+    justify-content: space-between;
+
+    p {
+      margin-bottom: 0;
+    }
+  }
+}

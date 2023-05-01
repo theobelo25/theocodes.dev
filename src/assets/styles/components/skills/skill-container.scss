@@ -1,0 +1,48 @@
+.skills {
+  h2 {
+    font-family: var(--heading-font);
+    color: var(--heading-color);
+  }
+  .skills-list {
+    display: grid;
+    gap: 1rem;
+    margin: 0;
+    padding: var(--card-padding);
+    background: var(--card-background);
+    border-radius: var(--card-border-radius);
+    list-style: none;
+    box-shadow: var(--card-box-shadow);
+
+    @media (min-width: 851px) {
+      grid-template-columns: repeat(12, 1fr);
+
+      .skill:nth-child(11n + 1) {
+        grid-column: 2 / span 2;
+      }
+    }
+
+    @media (min-width: 601px) and (max-width: 850px) {
+      grid-template-columns: repeat(10, 1fr);
+
+      .skill:nth-child(9n + 1) {
+        grid-column: 2 / span 2;
+      }
+    }
+
+    @media (min-width: 451px) and (max-width: 600px) {
+      grid-template-columns: repeat(8, 1fr);
+
+      .skill:nth-child(7n + 1) {
+        grid-column: 2 / span 2;
+      }
+    }
+
+    @media (max-width: 450px) {
+      grid-template-columns: repeat(6, 1fr);
+
+      .skill:nth-child(5n + 1) {
+        grid-column: 2 / span 2;
+      }
+    }
+  }
+}

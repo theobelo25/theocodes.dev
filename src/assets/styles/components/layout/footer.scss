@@ -1,0 +1,31 @@
+footer {
+  //   position: sticky;
+  padding: 1rem 0 1rem 0;
+  // background: hsl(216 97 16 / 0.7);
+  // background: radial-gradient(
+  //   circle at 95.2% 90.9%,
+  //   hsl(226 100% 52.7% / 0.5) 5.2%,
+  //   hsl(222 91.2% 13.3% / 0.7) 60.3%
+  // );
+
+  p {
+    margin: 0;
+    color: white;
+  }
+}
+
+@media (max-width: 35em) {
+  footer {
+    position: fixed;
+    inset: calc(100vh - (2rem + 16px)) 0 0 0;
+    z-index: 999;
+  }
+}
+
+@media (min-width: 35em) {
+  footer {
+    position: fixed;
+    inset: calc(100vh - (2rem + 32px)) 0 0 0;
+    z-index: 999;
+  }
+}

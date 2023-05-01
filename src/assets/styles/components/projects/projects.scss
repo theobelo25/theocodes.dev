@@ -1,0 +1,23 @@
+/// Projects
+///
+/// Compile scss for all project types
+
+// Professional
+@import "./professional-project.scss";
+
+// Freelance
+@import "./freelance-project.scss";
+
+// Personal
+@import "./personal-project.scss";
+
+// Featured
+@import "./featured-projects-container.scss";
+
+// Current Projects
+@import "./current-projects-container.scss";
+@import "./current-project-item.scss";
+
+// Shared
+@import "./projectTags.scss";
+@import "./project-container.scss";

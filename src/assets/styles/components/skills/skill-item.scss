@@ -1,0 +1,48 @@
+.skill {
+  position: relative;
+  grid-column: span 2;
+  margin: 0;
+  padding: 2rem;
+  aspect-ratio: 1 / 1;
+
+  @media (max-width: 850px) {
+    padding: 1rem;
+  }
+
+  .skill-image-container {
+    text-align: center;
+    aspect-ratio: 1 / 1;
+
+    img {
+      margin: 0;
+      width: 100%;
+    }
+  }
+
+  .skill-name-card {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(
+      circle at 50% 50%,
+      hsl(0 0% 0% / 0.8) 0%,
+      hsl(0 0% 0% / 0) 60.3%
+    );
+    backdrop-filter: blur(1rem);
+    border-radius: 50%;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+
+    &.active {
+      opacity: 1;
+    }
+
+    h3 {
+      color: white;
+      font-family: "ArcadeClassic";
+      text-align: center;
+    }
+  }
+}

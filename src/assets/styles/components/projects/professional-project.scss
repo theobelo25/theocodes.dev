@@ -1,0 +1,73 @@
+.professional-project {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background: var(--card-background);
+  border-radius: var(--card-border-radius);
+  padding: var(--card-padding);
+  box-shadow: var(--card-box-shadow);
+
+  @media (max-width: 50rem) {
+    flex-direction: column-reverse;
+
+    &:not(:first-of-type) {
+      margin-top: 1rem;
+    }
+  }
+
+  &:not(:last-of-type) {
+    margin-bottom: 3rem;
+  }
+
+  .professional-project-info {
+    position: relative;
+    width: 50%;
+
+    @media (max-width: 50rem) {
+      width: 100%;
+    }
+
+    h3 {
+      width: 90%;
+      color: white;
+      font-family: "RadwaveRegular";
+    }
+
+    p {
+      color: #fff01f;
+      font-family: "ArcadeClassic";
+    }
+
+    a {
+      display: flex;
+      align-self: center;
+      color: white;
+      text-decoration: none;
+
+      @media (min-width: 50rem) and (max-width: 856px) {
+        position: absolute;
+        right: 1rem;
+        bottom: 0;
+      }
+
+      svg {
+        margin-right: 1rem;
+        height: 1.5rem;
+        width: 1.5rem;
+      }
+    }
+  }
+
+  .image-container {
+    width: 50%;
+    border-radius: var(--card-border-radius);
+    overflow: hidden;
+
+    @media (max-width: 50rem) {
+      width: 100%;
+    }
+
+    .project-image {
+    }
+  }
+}

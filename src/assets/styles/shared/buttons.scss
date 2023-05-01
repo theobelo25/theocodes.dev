@@ -1,0 +1,23 @@
+.btn {
+  padding: 0.5rem 1rem;
+  color: white;
+  border: none;
+  border-radius: var(--button-border-radius);
+  box-shadow: var(--card-box-shadow);
+}
+
+.primary {
+  background-color: var(--button-background);
+}
+
+.secondary {
+  display: flex;
+  align-items: center;
+  background: white;
+  border-radius: 0.5rem;
+  color: var(--background-dark);
+  text-decoration: none;
+  svg + span {
+    margin-left: 0.5rem;
+  }
+}

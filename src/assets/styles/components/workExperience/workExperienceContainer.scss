@@ -1,0 +1,73 @@
+.work-experience {
+  .work-experience-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    h2 {
+      flex-shrink: 0;
+      max-width: 70%;
+    }
+  }
+
+  .work-experience-nav {
+    display: flex;
+    flex-shrink: 1;
+
+    @media (max-width: 375px) {
+      display: none;
+    }
+
+    button {
+      &:not(:last-of-type) {
+        margin-right: 1rem;
+      }
+      @media (max-width: 35em) {
+        margin-bottom: 1rem;
+
+        &:not(:last-of-type) {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+
+  #work-experience-title {
+    color: var(--heading-color);
+    font-family: var(--heading-font);
+  }
+
+  .work-experience-slider {
+    position: relative;
+    // min-height: 45vh;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background-color: var(--card-background);
+    border-radius: var(--card-border-radius);
+    box-shadow: var(--card-box-shadow);
+  }
+
+  .nav-dots {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+
+    .nav-dot {
+      height: 1rem;
+      width: 1rem;
+      background-color: var(--heading-color);
+      border-radius: 50%;
+      border: 1px solid var(--heading-color);
+      transition: 0.3s;
+
+      &:not(:last-of-type) {
+        margin-right: 0.5rem;
+      }
+
+      &.active {
+        background-color: var(--background-dark);
+      }
+    }
+  }
+}

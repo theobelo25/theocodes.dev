@@ -1,0 +1,81 @@
+.landing-hero {
+  position: relative;
+  z-index: 100;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 80vw;
+
+  .eyebrow {
+    font-size: clamp(1rem, -0.875rem + 8.333vw, 2rem);
+    font-family: "ArcadeClassic";
+    letter-spacing: 1rem;
+    color: #fff01f;
+  }
+
+  h1 {
+    // position: relative;
+    margin-bottom: 0;
+    font-family: "RadwaveRegular";
+    font-size: clamp(1.5rem, -0.875rem + 8.333vw, 5rem);
+    font-weight: 400;
+    color: white;
+    text-transform: uppercase;
+
+    // .outline-copy {
+    //   position: absolute;
+    //   top: -200%;
+    //   font-family: "RadwaveOutline";
+    //   opacity: 0.3;
+    // }
+
+    // .faded-outline {
+    //   position: absolute;
+    //   top: -100%;
+    //   z-index: 150;
+    //   font-family: "RadwaveOutline";
+    //   background: linear-gradient(
+    //     to top,
+    //     rgba(255, 255, 255, 0.5) 0%,
+    //     rgba(255, 255, 255, 0.3) 80%
+    //   );
+    //   background-clip: text;
+    //   color: transparent;
+    //   pointer-events: none; /* so the text is still selectable */
+    // }
+
+    // .faded-copy {
+    //   position: absolute;
+    //   top: -100%;
+    //   z-index: 100;
+    //   font-family: "RadwaveRegular";
+    //   color: transparent;
+    //   background: linear-gradient(
+    //     to top,
+    //     rgba(255, 255, 255, 1) 5%,
+    //     rgba(255, 255, 255, 0) 80%
+    //   );
+    //   background-clip: text;
+    //   pointer-events: none; /* so the text is still selectable */
+    // }
+  }
+
+  h2 {
+    margin-top: 0;
+    font-family: "ArcadeClassic";
+    font-size: clamp(1rem, -0.875rem + 8.333vw, 2rem);
+    letter-spacing: 1rem;
+    color: #fff01f;
+  }
+
+  article {
+    width: 70%;
+  }
+
+  .image-container {
+    width: 30%;
+    padding-top: 30%;
+    background-color: red;
+  }
+}

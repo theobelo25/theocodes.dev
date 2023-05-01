@@ -1,0 +1,19 @@
+.education-container {
+  h2 {
+    font-family: var(--heading-font);
+    color: var(--heading-color);
+  }
+  .education-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    @media (max-width: 1000px) {
+      flex-direction: column;
+    }
+  }
+}

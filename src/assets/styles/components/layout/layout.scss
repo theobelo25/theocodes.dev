@@ -1,0 +1,16 @@
+/// Layout
+///
+/// Compile scss for layout components
+
+// Header
+@import "./header.scss";
+
+// Footer
+@import "./footer.scss";
+
+// Main Navigation
+@import "./main-nav.scss";
+
+// Heroes
+@import "./landingHero.scss";
+@import "./secondaryHero.scss";

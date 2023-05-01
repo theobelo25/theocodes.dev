@@ -1,0 +1,159 @@
+.primary-navigation {
+  --_gap: 2rem;
+
+  list-style: none;
+  margin: 0;
+  display: flex;
+  gap: var(--gap);
+  transform: translateX(0);
+
+  li {
+    a {
+    }
+  }
+
+  // li {
+  //   margin-bottom: 0;
+
+  //   a {
+  //     color: white;
+  //     // font-size: clamp(0.5rem, 0.056rem + 1.29vw, 1rem);
+  //     font-family: "RadwaveRegular";
+  //     text-decoration: none;
+
+  //     .link-number {
+  //       font-size: 12px;
+  //       // font-family: "ArcadeClassic";
+  //       margin-right: 8px;
+  //       color: #39ff14;
+  //       // letter-spacing: 4px;
+  //     }
+  //   }
+  // }
+}
+
+.mobile-nav-toggle {
+  border: 0;
+  background: none;
+  svg {
+    width: 2rem;
+    height: 2rem;
+  }
+}
+
+@media (max-width: 35em) {
+  .primary-navigation {
+    --gap: 2em;
+    position: fixed;
+    inset: 0 0 0 30%;
+    flex-direction: column;
+    padding: min(30vh, 10rem) 2rem;
+    background: hsl(0 0% 0% / 0.75);
+
+    transform: translateX(0);
+    transition: transform 0.3s ease-in-out;
+
+    &[data-visible="false"] {
+      transform: translateX(100%);
+    }
+
+    li {
+      margin-bottom: 0;
+
+      a {
+        display: flex;
+        align-items: center;
+        color: white;
+        font-size: 1.5rem;
+        font-family: "RadwaveRegular";
+        text-decoration: none;
+
+        .link-number {
+          font-size: 12px;
+          margin-right: 1rem;
+          color: #39ff14;
+        }
+      }
+    }
+  }
+
+  @supports (backdrop-filter: blur(1rem)) {
+    .primary-navigation {
+      background: hsl(0 0% 0% / 0.5);
+      backdrop-filter: blur(1rem);
+    }
+  }
+
+  .mobile-nav-toggle {
+    position: absolute;
+    top: 0.45rem;
+    right: 1rem;
+    z-index: 9999;
+    width: fit-content;
+    aspect-ratio: 1;
+    cursor: pointer;
+
+    .open {
+      display: none;
+      color: white;
+    }
+    .closed {
+      display: block;
+      color: white;
+    }
+
+    &[aria-expanded="true"] {
+      .open {
+        display: block;
+      }
+      .closed {
+        display: none;
+      }
+    }
+  }
+}
+
+@media (min-width: 35em) and (max-width: 55em) {
+  .primary-navigation {
+    .link-number {
+      display: none;
+    }
+  }
+}
+
+@media (min-width: 35em) {
+  .mobile-nav-toggle {
+    display: none;
+  }
+
+  .primary-navigation {
+    --gap: clamp(1.5rem, 5vw, 3rem);
+
+    li {
+      margin-bottom: 0;
+
+      a {
+        color: white;
+        font-size: clamp(0.75rem, 0.085rem + 1.935vw, 1.5rem);
+        font-family: "RadwaveRegular";
+        text-decoration: none;
+
+        .link-number {
+          font-size: 12px;
+          // font-family: "ArcadeClassic";
+          margin-right: 8px;
+          color: #39ff14;
+          // letter-spacing: 4px;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 55em) {
+  .primary-navigation {
+    .link-number {
+      display: inline-block;
+    }
+  }
+}

@@ -1,0 +1,21 @@
+.resume-download {
+  padding: 2rem 0;
+
+  .wrapper {
+    display: flex;
+    justify-content: center;
+  }
+
+  .resume-link {
+    padding: 1rem 2rem;
+    color: white;
+    text-decoration: none;
+    border: 1px solid white;
+    border-radius: 1rem;
+
+    svg {
+      color: white;
+      margin-right: 1rem;
+    }
+  }
+}

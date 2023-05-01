@@ -1,0 +1,26 @@
+/// Components
+///
+/// Compile scss for all components
+
+// Layout
+@import "./layout/layout.scss";
+@import "./layout/header.scss";
+@import "./layout/main-nav.scss";
+
+// Projects
+@import "./projects/projects.scss";
+
+// Util
+@import "./util/util.scss";
+
+// Work Experience
+@import "./workExperience/workExperience.scss";
+
+// Education
+@import "./education/education.scss";
+
+// Skills
+@import "./skills/skills.scss";
+
+// Contact
+@import "./contact/contact.scss";

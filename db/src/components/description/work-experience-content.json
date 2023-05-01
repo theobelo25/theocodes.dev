@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_description_work_experience_contents",
+  "info": {
+    "displayName": "work_experience_content"
+  },
+  "options": {},
+  "attributes": {
+    "content": {
+      "type": "text",
+      "required": true
+    }
+  }
+}

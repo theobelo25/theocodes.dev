@@ -1,0 +1,27 @@
+.contact-info-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex: 1 1 auto;
+
+  a {
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 1rem;
+    text-decoration: none;
+
+    svg {
+      margin-right: 1rem;
+    }
+
+    &:not(:last-of-type) {
+      margin-bottom: 1rem;
+    }
+  }
+}

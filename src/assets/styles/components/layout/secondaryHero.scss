@@ -1,0 +1,23 @@
+.secondary-hero {
+  h1 {
+    width: 80%;
+    margin: 2rem auto 0 0;
+    font-family: var(--heading-font);
+    font-size: var(--heading-font-size);
+    font-weight: 400;
+    color: var(--heading-color);
+    text-transform: uppercase;
+    border-bottom: 1px solid var(--heading-color);
+  }
+
+  p {
+    margin: 0 0 0 auto;
+    padding-top: 1rem;
+    width: 50%;
+    font-family: var(--subhead-font);
+    font-size: var(--subhead-font-size);
+    letter-spacing: 4px;
+    line-height: 1;
+    color: var(--subhead-color);
+  }
+}
