@@ -29,9 +29,11 @@ const SkillsItem = ({ skill }) => {
       <div
         className="skill-name-card"
         onClick={e => handleClick(e)}
+        onKeyDown={e => handleClick(e)}
         role="button"
         aria-controls={`${name}-card-title`}
         aria-expanded="false"
+        tabIndex="0"
       >
         <h3 id={`${name}-card-title`}>{name}</h3>
       </div>

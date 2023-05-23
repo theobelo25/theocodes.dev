@@ -28,11 +28,11 @@ const WorkExperience = ({ experienceArray }) => {
     setTouchEnd(e.targetTouches[0].clientX)
   }
   const handleTouchEnd = () => {
-    if (touchStart - touchEnd > 150) {
+    if (touchStart - touchEnd > 100) {
       handleNext()
     }
 
-    if (touchStart - touchEnd < -150) {
+    if (touchStart - touchEnd < -100) {
       handlePrev()
     }
   }

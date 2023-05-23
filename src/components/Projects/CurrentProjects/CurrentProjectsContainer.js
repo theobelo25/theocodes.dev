@@ -13,14 +13,15 @@ const CurrentProjectsContainer = ({ currentProjects }) => {
         <h2 id="current-projects-title">Currently Working On</h2>
         <ul className="current-projects-list accordion" ref={accordion}>
           {currentProjects.map((project, index) => {
-            return (
-              <CurrentProjectItem
-                key={project.id}
-                project={project}
-                accordion={accordion}
-                index={index}
-              />
-            )
+            if (index <= 1)
+              return (
+                <CurrentProjectItem
+                  key={project.id}
+                  project={project}
+                  accordion={accordion}
+                  index={index}
+                />
+              )
           })}
         </ul>
       </div>

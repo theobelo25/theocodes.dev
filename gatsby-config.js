@@ -23,20 +23,21 @@ const strapiConfig = {
      * For http request with a image or other files need authorization
      * For expamle: Fetch a CDN file which has a security config when gatsby building needs
      */
-    Referer: "https://your-site-domain/",
+    Referer: "https://www.theocodes.dev/",
     // Authorization: "Bearer eyJhabcdefg_replace_it_with_your_own_token",
   },
 }
 
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
-    siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
+    title: `theocodes.dev`,
+    description: `My personal portfolio site. Thank you for visiting!`,
+    author: `@theobelo25`,
+    siteUrl: `https://www.theocodes.dev`,
   },
   plugins: [
     `gatsby-plugin-image`,
+    `gatsby-plugin-netlify`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -66,7 +67,7 @@ module.exports = {
         // https://css-tricks.com/meta-theme-color-and-trickery/
         // theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/command-line-icon-7.png`, // This path is relative to the root of the site.
       },
     },
     `gatsby-plugin-sass`,
